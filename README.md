@@ -1,9 +1,9 @@
 # stripe-payment-gateway-php
 Strip payment gateway installation in php 
 
-1 ) Create Api Key with our Account.
-2) Download the Stripe SDK
-3) Set API key In your file like
+1 ) Create Api Key with our Account.<br>
+2) Download the Stripe SDK<br>
+3) Set API key In your file like<br>
  require_once('stripe/init.php'); 
 
 // Set Stripe API Key 
@@ -20,7 +20,7 @@ $customer = \Stripe\Customer::create(array(
 // Create a charge object to charge a credit or a debit card 
 	$charge = \Stripe\Charge::create(array( 
 				'customer'		=>	$customer_id, 
-				'amount'		=>	($totalAmount * 100), 
+				'amount'		=>	100, 
 				'currency'		=>	"usd", 
 				"description"	=>	$descrption 
 			));
